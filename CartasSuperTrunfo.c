@@ -115,14 +115,15 @@ float superpoder1, superpoder2;
     printf("Super Poder: %.2f.\n",superpoder2);
 
     printf("\n");//espaçamento
-
-    //comparando valores
-    printf("População: %d\n",populacao1 > populacao2);
-    printf("Área: %d\n", area1 > area2);
-    printf("PIB: %d\n",PIB1 > PIB2);
-    printf("Número de pontos turísticos: %d\n", PT1 > PT2);
-    printf("Densidade Populacional: %d\n", densidade1 > densidade2);
-    printf("PIB per capita: %d\n", PIBP1 > PIBP2);
-    printf("Super Poder: %d.\n", superpoder1 > superpoder2);
+    //batalha de população
+    if (populacao1 > populacao2){
+        printf("População da carta1: %d.\n",populacao1);
+        printf("População da carta2: %d.\n",populacao2);
+        printf("Carta 1 venceu!\n");
+    }else{
+        printf("População da carta1: %d.\n",populacao1);
+        printf("População da carta2: %d.\n",populacao2);
+        printf("Carta 2 venceu!\n");
+    }
     return 0;
 }
